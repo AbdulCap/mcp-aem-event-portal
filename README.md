@@ -25,7 +25,7 @@ Natural language prompts the LLM can respond to out of the box:
 ## Installation
 
 ```bash
-git clone https://github.com/your-org/mcp-aem-event-portal.git
+git clone https://github.com/AbdulCap/mcp-aem-event-portal.git
 cd mcp-aem-event-portal
 npm install
 npm run build
