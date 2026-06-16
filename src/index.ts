@@ -5,6 +5,8 @@ import { registerDomainTools } from './tools/domains.js';
 import { registerSchemaTools } from './tools/schemas.js';
 import { registerEventTools } from './tools/events.js';
 import { registerApplicationTools } from './tools/applications.js';
+import { registerEventApiTools } from './tools/eventApis.js';
+import { registerEnumerationTools } from './tools/enumerations.js';
 
 const server = new McpServer({
   name: 'mcp-aem-event-portal',
@@ -15,7 +17,8 @@ registerDomainTools(server);
 registerSchemaTools(server);
 registerEventTools(server);
 registerApplicationTools(server);
-
+registerEventApiTools(server);
+registerEnumerationTools(server);
 async function main() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
